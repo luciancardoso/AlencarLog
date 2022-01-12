@@ -1,0 +1,405 @@
+body,
+html {
+    height: 900px;
+    background: url(../assets/bg.png) no-repeat center bottom;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+}
+
+#header.active {
+    position: fixed;
+    background: #0bb30b;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+#header .navbar-collapse {
+    width: auto;
+}
+
+#header .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    color: #000;
+    border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover {
+    border-bottom: 4px solid var(--secundary);
+    color: var(--secundary);
+}
+
+/* #slider {
+    height: 900px;
+    background: url(../assets/bg.png) no-repeat center bottom;
+    background-size: cover;
+} */
+
+#slider h1 {
+    margin-bottom: 600px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#slider h4 {
+    text-transform: uppercase;
+    font-weight: 14px;
+}
+
+/*
+ ======================= title meio =======
+*/
+
+.site-banner .site-title h3{
+    padding-top: 20%;
+    font-weight: 500;
+}
+
+.site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 28vh;
+    background: white;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-banner .site-title h1{
+    font-size: 4rem;
+    color: #01224f;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.site-banner .site-title h1 span {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #0bb30b;
+}
+
+/* .site-banner .site-title .textAlecarLog{
+    font-size: 1.8rem;
+    color: black;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
+
+/*
+ ======================= fim title meio =======
+*/
+
+#servicos a.destaque {
+    display: block;
+    background: var(--light);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+}
+
+#servicos a.destaque:hover {
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(1.05);
+}
+
+#servicos p {
+    color: var(--dark);
+}
+
+#servicos a.destaque .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#servicos a.destaque .img-container img {
+    max-height: 160px;
+}
+
+/*
+==================== Localização ==============
+*/
+
+.bgLocaliza {
+    background-color: #0bb30b;
+    background-image: url(../assets/body-bg.png);
+}
+
+.map {
+    height: 500px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    /* cursor: pointer; */
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.articleLocaliza {
+    position: absolute;
+    height: auto;
+    right: 17%;
+    top: 40%;
+    width: 24%;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    background-color: #00BAA4;
+    border-radius: 22% 0 80%;
+}
+
+/*
+    ==================== FIM da Localização ==============
+*/
+
+.contato {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(234 , 249,251,0.63) 0.1%, rgba(239,249,251,0.63) 90.1%);
+}
+
+/*
+    ================ SERVICES =================
+*/
+
+.fundoAreaAtuacao {
+    background-color: #323a45;
+}
+
+.paragraph {
+    margin-top: 15px;
+    padding: 1rem 5rem 1rem 5rem;
+    font-size: 1.1rem;
+    color: #b1b4bd;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.paragraph1 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.our-service-right {
+    min-height: 750px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.9)));
+    background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.74)) , url(../assets/bg1.jpg);
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.service-section {
+    color: #fff;
+    margin-top: 20px;
+    padding: 5rem 2rem 0rem 5rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.service-title {
+    color: #fff;
+    padding: 1rem 2rem 1rem 5rem;
+    font-size: 1.8rem;
+}
+
+
+.service-paragraph {
+    margin-top: 15px;
+    padding: 0rem 1rem 1rem 5rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.icon {
+    font-size: 4rem;
+    color: #7fc241;
+}
+
+.fab {
+    color: #fff;
+}
+
+.services-1 .fa {
+    padding: 3rem 2rem 1rem 5rem;
+}
+
+.services-2 .fa {
+    padding: 3rem 5rem 1rem 1rem;
+}
+
+#clientes a.link-cliente {
+    padding: 0 15px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--light);
+    height: 100px;
+    transition: ease-in all 0.2s;
+}
+
+#clientes a.link-cliente:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+#clientes a.link-cliente img {
+    filter: grayscale(100%);
+    max-height: 70px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+#clientes a.link-cliente:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+#clientes .cliente-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--light);
+    border-radius: 5px ;
+}
+
+#clientes .cliente-text .imagem {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    margin-left: -70px;
+    color: #b4b4b4;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+#clientes .cliente-text .imagem span {
+    color: var(--secundary);
+    font-size: 110px;
+    line-height: 110px;
+    letter-spacing: -10px;
+    font-family: 900;
+    display: block;
+}
+
+#clientes .cliente-text .telefone {
+    display: flex;
+    font-size: 14px;
+    color: #b4b4b4;
+}
+
+#clientes .cliente-text .telefone span {
+    font-size: 25px;
+    color: #797979;
+    font-weight: 900;
+    display: block;
+}
+
+.footer {
+    background: #0bb30b;
+    color: white;
+}
+
+.social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: #b4b4b4;
+}
+
+.social a:hover > i{
+    color: white;
+}
+
+.site-banner .title-text h1{
+    font-size: 5rem;
+    color: #01224f;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.site-banner .title-text h1 span {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: #0bb30b;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links li a {
+    color: white;
+    transition: color .2s;
+}
+
+.links li a:hover {
+    text-decoration: none;
+    color: #4180CB;
+}
+
+.about-company i {
+    font-size: 25px;
+}
+
+.about-company a {
+    color: white;
+    transition: color .2s;
+}
+
+.about-company a:hover {
+    color: #4180CB;
+}
+
+.location i {
+    font-size: 18px;
+}
+
+.copyright p {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.gotopbtn .fa {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    border-radius: 50%;
+    background: #f6faf8;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.gotopbtn:hover {
+    transform: scale(1.2);
+    border: 1px solid rebeccapurple;
+    transition: all .2s ease-in-out;
+    background: #f6faf8;
+}
